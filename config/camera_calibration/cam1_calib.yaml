@@ -1,0 +1,3 @@
+# .11 pixel reprojection error
+camera_matrix_flattened: [585.9528, 0.0, 315.2594, 0.0, 586.0343, 245.7776, 0.0, 0.0, 1.0]
+camera_distortion_coefficients: [-0.4473, 0.2685, -0.0002, -0.0006, -0.1077]

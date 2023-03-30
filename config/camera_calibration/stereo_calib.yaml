@@ -1,0 +1,7 @@
+camera0_projection_matrix_flattened: [582.3094, 0.0, 323.6991, 0.0, 0.0, 581.8881, 258.2891, 0.0, 0.0, 0.0, 1.0, 0.0]
+camera1_projection_matrix_flattened: [586.8985782, -2.61153694, 313.47001566000006, -56.02982886071237, 0.03409164000000012, 583.3458762500001, 252.02358925000001, 0.7647187548605341, 0.003, -0.0107, 0.9999, 0.0020431382200000003]
+
+
+# [intrinsicMatrix1,distortionCoefficients1,intrinsicMatrix2, ...
+#    distortionCoefficients2,rotationOfCamera2,translationOfCamera2] =...
+#    stereoParametersToOpenCV(stereoParams)
