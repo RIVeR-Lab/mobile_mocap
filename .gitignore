@@ -32,6 +32,8 @@ devel_isolated/
 # qcreator stuff
 CMakeLists.txt.user
 
+/notebooks/.ipynb_checkpoints
+
 srv/_*.py
 *.pcd
 *.pyc
@@ -49,3 +51,11 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+# Other
+/calibration/**
+calibration/**
+.vscode/**
+.vscode
+
+.ipynb_checkpoints

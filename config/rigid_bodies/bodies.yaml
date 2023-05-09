@@ -1,0 +1,5 @@
+body_names: ["scalene"]
+body_descriptions_lengths: [3]
+body_description_locations_x: [-.05, -.05, .05]
+body_description_locations_y: [.05, -0.02, -.05]
+body_description_locations_z: [0.0, 0.0, 0.0]
