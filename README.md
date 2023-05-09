@@ -1,5 +1,5 @@
 # Mobile Motion Capture
-Welcome to the Mobile Motion Capture World. Built for ROS2 Humble and Ubuntu 22.04. 
+Welcome to the Mobile Motion Capture World. Modified codebase for compatibility with ROS 2 Foxy.
 
 # Citation
 ```
