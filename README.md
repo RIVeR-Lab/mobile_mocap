@@ -1,5 +1,5 @@
 # Mobile Motion Capture
-Welcome to the Mobile Motion Capture World. Built for ROS2 Humble and Ubuntu 22.04. 
+Welcome to the Mobile Motion Capture World. Developed with ROS 2 Humble/Ubuntu 22.04, compatible with ROS 2 Foxy / Ubuntu 20.04.
 
 # Citation
 ```
@@ -16,6 +16,8 @@ Welcome to the Mobile Motion Capture World. Built for ROS2 Humble and Ubuntu 22.
 # Installation 
 ```
 git clone git@github.com:RIVeR-Lab/mobile_mocap.git # in your colcon workspace
+# If you're using ROS 2 Foxy and Ubuntu 20.04, run 'git checkout foxy'
+
 sudo apt-get install v4l-utils
 pip install opencv-python # Must be done AFTER ROS 2 install!
 pip install scikit-spatial
