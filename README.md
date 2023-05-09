@@ -16,6 +16,7 @@ Welcome to the Mobile Motion Capture World. Modified codebase for compatibility 
 # Installation 
 ```
 git clone git@github.com:RIVeR-Lab/mobile_mocap.git # in your colcon workspace
+git checkout foxy
 sudo apt-get install v4l-utils
 pip install opencv-python # Must be done AFTER ROS 2 install!
 pip install scikit-spatial
