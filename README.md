@@ -39,8 +39,18 @@ Adjust ```config/camera_calibration/cam0_calib.yaml``` to match your first camer
 Adjust ```config/camera_calibration/cam1_calib.yaml``` to match your second camera intrinsic (camera matrix & distortion coefficents).
 
 Adjust ```config/camera_calibration/stereo_calib.yaml``` to match your stereo camera intrinsic (projection matrices for both cameras).
+
+Adjust the port values in ```config/camera_calibration/stereo_calib.yaml``` to match that determined with v4l2. It is important that camera0 and camera1 ports are always consistent (for example, camera 0 can always refer to the left camera).
+
+Rebuild and resource your colcon workspace.
 ```
-ros2 launch mobile_mocap arducam_bringup.py cam0_port:=XXX cam1_port:=XXX
+cd ~/YOUR_COLCON_WS/
+colcon build
+source install/setup.bash
+```
+
+```
+ros2 launch mobile_mocap arducam_bringup.py
 ```
 
 # Calibration
