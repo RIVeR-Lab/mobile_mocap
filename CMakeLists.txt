@@ -5,7 +5,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# add_compile_options(-g) # uncomment to debug
+# add_compile_options(-g)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -39,7 +39,9 @@ install(PROGRAMS
   scripts/calibrate.py
   scripts/setup_cameras.py
   scripts/rigid_body_tracker.py
-  scripts/determine_matrices.py
+  # scripts/find_markers_v1.py # deprecated
+  # scripts/find_markers.py # deprecated
+  # scripts/publish_feed.py # deprecated
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -73,6 +75,8 @@ target_link_libraries(triangulate "${cpp_typesupport_target}")
 add_executable(publish_feed src/publish_feed.cpp)
 ament_target_dependencies(publish_feed rclcpp cv_bridge OpenCV camera_info_manager)
 
+add_executable(temp src/temp.cpp)
+ament_target_dependencies(temp OpenCV)
 
 target_include_directories(find_markers
   PUBLIC
@@ -95,6 +99,7 @@ install(TARGETS
         find_markers
         triangulate
         publish_feed
+        temp
         DESTINATION lib/${PROJECT_NAME}
 )
 
