@@ -4,14 +4,15 @@ Welcome to the Mobile Motion Capture World. Developed with ROS 2 Humble/Ubuntu 2
 
 # Citation
 ```
-@article{lvov2023momocap,
-  title={Mobile MoCap: Retroreflector Localization On-The-Go},
-  author={Lvov, Gary and Zolotas, Mark and Hanson, Nathaniel and Allison, Austin and Hubbard, Xavier and Carvajal, Michael and Padir, Taskin},
-  journal={arXiv preprint arXiv:2303.13681},
+@INPROCEEDINGS{10260562,
+  author={Lvov, Gary and Zolotas, Mark and Hanson, Nathaniel and Allison, Austin and Hubbard, Xavier and Carvajal, Michael and Padir, Taşkin},
+  booktitle={2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)}, 
+  title={Mobile MoCap: Retroreflector Localization On-The-Go}, 
   year={2023},
-  url={https://arxiv.org/abs/2303.13681},
-  doi={10.48550/arXiv.2303.13681},
-}
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.1109/CASE56687.2023.10260562}}
 ```
 
 # Installation 
